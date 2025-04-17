@@ -8,7 +8,7 @@
     line-height: 1.6;
     color: #111;
   }
-  
+
   header {
     position: fixed;
     top: 0;
@@ -41,22 +41,53 @@
     color: #111;
     font-weight: bold;
   }
-  .hero {
+
+  .logo img {
+    height: 50px; 
+    width: auto;
+    display: block;
+  }
+
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
+    box-sizing: border-box;
+  }
+  
+  .Introduccion {
+    background-image: url("Recursos\chicaClases.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    height: 80vh;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    color: rgb(255, 255, 255); 
+    position: relative;
   }
-  .hero-text {
-    max-width: 500px;
-  }
-  .hero img {
+  
+  /* Fondo oscuro para mejorar legibilidad */
+  .Introduccion::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
     width: 100%;
-    max-width: 500px;
-    background: #ccc;
-    height: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* opacidad del fondo */
+    z-index: 1;
   }
+  
+  .Introduccion-text {
+    position: relative;
+    z-index: 2;
+  }
+
+  
   .btn {
     padding: 0.6rem 1.2rem;
     border: none;
