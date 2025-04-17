@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #111;
+  }
+  header, footer {
+    background-color: #f8f8f8;
+    padding: 1rem 2rem;
+  }
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+  }
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  .hero-text {
+    max-width: 500px;
+  }
+  .hero img {
+    width: 100%;
+    max-width: 500px;
+    background: #ccc;
+    height: 300px;
+  }
+  .btn {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+    font-weight: bold;
+  }
+  .btn-primary {
+    background-color: black;
+    color: white;
+  }
+  .btn-outline {
+    background: white;
+    border: 1px solid black;
+    color: black;
+  }
+  section {
+    padding: 2rem;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  .card {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  .card img {
+    background: #ccc;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 1rem;
+  }
+  .testimonial {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: #f9f9f9;
+  }
+  .testimonial img {
+    width: 300px;
+    height: 300px;
+    background: #ccc;
+  }
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  .service {
+    flex: 1;
+    min-width: 250px;
+    background: #f2f2f2;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  .accordion {
+    margin-top: 1rem;
+  }
+  .accordion-item {
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #ccc;
+  }
+  .accordion-item summary {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.5rem 0;
+  }
+  .join {
+    text-align: center;
+    background: #f0f0f0;
+    padding: 2rem;
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  footer ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .testimonial {
+      flex-direction: column;
+    }
+  }
+  
