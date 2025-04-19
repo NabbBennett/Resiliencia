@@ -1,16 +1,18 @@
-let lastScroll = 0;
-const header = document.getElementById("main-header");
+document.addEventListener("DOMContentLoaded", function () {
+    let lastScroll = 0;
+    const navbar = document.querySelector(".navbar");
 
-window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset;
+    window.addEventListener("scroll", function () {
+      const currentScroll = window.scrollY;
 
-  if (currentScroll > lastScroll) {
-    // scroll hacia abajo
-    header.style.top = "-100px";
-  } else {
-    // scroll hacia arriba
-    header.style.top = "0";
-  }
+      if (currentScroll > lastScroll && currentScroll > 50) {
+        // Scrolling hacia abajo
+        navbar.classList.add("ocultar");
+      } else {
+        // Scrolling hacia arriba
+        navbar.classList.remove("ocultar");
+      }
 
-  lastScroll = currentScroll;
+      lastScroll = currentScroll;
+    });
 });

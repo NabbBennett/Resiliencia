@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="Instituto Resiliencia" content="width=device-width, initial-scale=1.0"/>
-  <title>Instituto Resiliencia</title>
-  <link rel="stylesheet" href="CSS\estilo.css" />
-  <script src="JS\script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Instituto Resiliencia" content="width=device-width, initial-scale=1.0" />
+    <title>Instituto Resiliencia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilo.css" />
+    <script src="JS/script.js" defer></script>
 </head>
 
-<body>
-  <header id="main-header">
-    <nav>
-        <div class="logo">
-            <img src="Recursos/icon.png" alt="Logo">
-        </div>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Universidades</a></li>
-        <li><a href="#">Cursos</a></li>
-        <li><a href="#">Más Información</a></li>
-        <li><a href="#" class="btn btn-outline">Entrar</a></li>
-        <li><a href="#" class="btn btn-primary">Registrarse</a></li>
-      </ul>
-    </nav>
-  </header>
 
-    <div class="container">
+    <body>
+        <header class="navbar">
+            <div class="nav-contenedor">
+                <img src="Recursos/LogoInicio.png" alt="Logo del Instituto Resiliencia" class="Logo">
+                    <nav class="Rercursos-Nav">
+                        <a href="#">Inicio</a>
+                        <a href="#">Universidades</a>
+                        <a href="#">Cursos</a>
+                    </nav>
+                        <div class="Inicio-Registro">
+                            <a href="#" class="Inicio">Inicar Sesión</a>
+                            <a href="#" class="Btn-Registro">Registrate</a>
+                        </div>
+            </div>
+        </header>
+
         <section class="Introduccion">
-            <div class="Introduccion-text">
-                <h1>Bienvenido al Instituto Resiliencia</h1>
-                <p>En nuestro instituto, transformamos el aprendizaje en una experiencia única e inspiradora.</p>
-                <button class="btn btn-primary">Explorar</button>
-                <button class="btn btn-outline">Inscribirse</button>
+            <div class="Introduccion-content">
+                <div class="Introduccion-texto">
+                    <h1>Bienvenido al Instituto Resiliencia</h1>
+                    <p>En nuestro instituto, transformamos el aprendizaje en una experiencia única y enriquecedora. Únete a nosotros y descubre cómo podemos ayudarte a alcanzar tus metas académicas.</p>
+                    <div class="botones">
+                        <a href="#" class="btn btn-negro">Explorar</a>
+                        <a href="#" class="btn btn-blanco">Inscribirse</a>
+                    </div>
+                </div>
+                <div class="Introduccion-imagen">
+                    <img src="Recursos/chicaClases.png" alt="Imagen representativa de una estudiante">
+                </div>
             </div>
         </section>
-
+  
         <section>
             <h2>Nuestra misión y visión en Instittuo Resiliencia</h2>
                 <div class="cards">
@@ -48,7 +57,7 @@
                     </div>
                 </div>
         </section>
-
+        
         <section>
             <h2>Tu futuro comienza</h2>
             <p>En nuestro instituto, formamos a los líderes del mañana a través de la educación de calidad.</p>
@@ -168,5 +177,6 @@
         </ul>
         <small>© 2025 Instituto Resiliencia. Todos los derechos reservados.</small>
     </footer>
+    
 </body>
 </html>
