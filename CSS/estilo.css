@@ -265,22 +265,101 @@
     background: #f0f0f0;
     padding: 2rem;
   }
+
   footer {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    padding: 2rem 0;
+    background-color: #ffffff;
   }
-  footer ul {
-    list-style: none;
+  
+  .redes-sociales {
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
   }
-  footer ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 0.9rem;
+  
+  .redes-sociales li {
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   }
+  
+  .redes-sociales li:hover {
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+  }
+  
+  .redes-sociales li::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .redes-sociales li:hover::before {
+    opacity: 1;
+  }
+  
+  .icono-img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s;
+  }
+  
+  .titulo {
+    font-family: "Lato", sans-serif;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    transform: translate(-50%, -50%) scale(0);
+    top: 50%;
+    left: 50%;
+    transition: 0.5s;
+    z-index: 2;
+  }
+  
+  .redes-sociales li:hover .icono-img {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  
+  .redes-sociales li:hover .titulo {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  
+  .Derecho p{
+    padding-top: 20px;
+    text-align: center;
+    font-size: small;
+  }
+  
+
+  /*
   @media (max-width: 768px) {
     .hero {
       flex-direction: column;
@@ -315,3 +394,4 @@
     }
     
   }
+    */
