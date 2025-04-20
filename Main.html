@@ -1,222 +1,207 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Instituto Resiliencia" content="width=device-width, initial-scale=1.0" />
-    <title>Instituto Resiliencia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Testimonios MindSync</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/estilo.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="JS/script.js"></script>
 </head>
-
-    <body>
-        <header class="navbar">
-            <div class="nav-contenedor">
-                <img src="Recursos/LogoInicio.png" alt="Logo del Instituto Resiliencia" class="Logo">
-                    <nav class="Recursos-Nav">
-                        <a href="#">Inicio</a>
-                        <a href="#">Universidades</a>
-                        <a href="#">Cursos</a>
-                    </nav>
-                        <div class="Inicio-Registro">
-                            <a href="#" class="Inicio">Inicar Sesión</a>
-                            <a href="#" class="Btn-Registro">Registrate</a>
-                        </div>
-            </div>
-        </header>
-
-        <section class="Introduccion" >
-            <div class="Introduccion-content">
-                <div class="Introduccion-texto">
-                    <h1>Bienvenido al Instituto Resiliencia</h1>
-                    <p>En nuestro instituto, transformamos el aprendizaje en una experiencia única y enriquecedora. Únete a nosotros y descubre cómo podemos ayudarte a alcanzar tus metas académicas.</p>
-                    <div class="botones">
-                        <a href="#" class="btn btn-negro">Inscribete</a>
-                        <a href="#MisionVision" class="btn btn-blanco">Leer más</a>
+<body>
+    <header class="navbar">
+        <div class="nav-content">
+            <img src="Recursos/LogoInicio.png" alt="Logo del Instituto Resiliencia" class="Logo">
+                <nav class="resources-Nav">
+                    <a href="#">Inicio</a>
+                    <a href="#">Universidades</a>
+                    <a href="#">Cursos</a>
+                </nav>
+                    <div class="Login-Register">
+                        <a href="#" class="login">Inicar Sesión</a>
+                        <a href="#" class="Btn-Register">Registrate</a>
                     </div>
-                </div>
-                <div class="Introduccion-imagen">
-                    <img src="Recursos/chicaClases.png" alt="Imagen representativa de una estudiante">
-                </div>
-            </div>
-        </section>
-
-        <section class="MisionVision" id="MisionVision">
-
-            <h2 class="Mision-Vision">Nuestra misión y visión en Instituto Resiliencia</h2>
-            
-            <div class="Paneles">
-                <div class="Panel">
-                    <h3>MISIÓN</h3>
-                    <div class="info">
-                        <p>Mision texto texto texto texto</p>
-                    </div>
-                </div>
-                                    
-                <div class="Panel">
-                    <h3>VISIÓN</h3>
-                    <div class="info">
-                        <p>Vision texto texto texto texto</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-<!--
-        <section>
-            <h2>Tu futuro comienza</h2>
-            <p>En nuestro instituto, formamos a los líderes del mañana a través de la educación de calidad.</p>
-            <div class="cards">
-            <div class="card">
-                <img alt="Card 1">
-                <h3>Descubre las oportunidades académicas</h3>
-                <p>Ofrecemos una variedad de cursos adaptados a la elección de cada universidad.</p>
-                <a href="#">Ver más</a>
-            </div>
-            <div class="card">
-                <img alt="Card 2">
-                <h3>Cursos para cada carrera</h3>
-                <p>Programas diseñados para maximizar tu potencial académico y profesional.</p>
-                <a href="#">Inscribirse</a>
-            </div>
-            <div class="card">
-                <img alt="Card 3">
-                <h3>Mejora tus habilidades</h3>
-                <p>Cada curso está creado para elevar tus competencias académicas.</p>
-                <a href="#">Únete</a>
-            </div>
-            </div>
-        </section>
-
-    -->
-
-    <div class="testimonios">
-        <h2 class="Testimonio-titulo">Opiniones de nuestros ex-alumnos</h2>
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            
-            <!-- Testimonio 1 -->
-            <div class="swiper-slide">
-              <div class="testimonio">
-                <img src="Recursos\Logo-BUAP.png" alt="Usuario 1" class="testimonio-imagen" />
-                <h3 class="testimonio-nombre">Jazmín Ortega</h3>
-                <p class="UniversidadIngresada">Universidad Autónoma de Querétaro</p>
-                <p class="testimonio-texto">“Es una aplicación que realmente me ayudó a reforzar mis conocimientos y habilidades como estudiante.”</p>
-              </div>
-            </div>
-      
-            <!-- Testimonio 2 -->
-            <div class="swiper-slide">
-              <div class="testimonio">
-                <img src="Recursos\Logo-BUAP.png" alt="Usuario 2" class="testimonio-imagen" />
-                <h3 class="testimonio-nombre">Carlos Rodríguez</h3>
-                <p class="UniversidadIngresada">Universidad de Guadalajara</p>
-                <p class="testimonio-texto">“La interfaz es muy intuitiva y los contenidos están bien explicados. ¡La recomiendo!”</p>
-              </div>
-            </div>
-      
-            <!-- Testimonio 3 -->
-            <div class="swiper-slide">
-              <div class="testimonio">
-                <img src="Recursos\Logo-BUAP.png" alt="Usuario 3" class="testimonio-imagen" />
-                <h3 class="testimonio-nombre">Fernanda López</h3>
-                <p class="UniversidadIngresada">Instituto Politécnico Nacional</p>
-                <p class="testimonio-texto">“Me encantó cómo combina teoría con ejercicios prácticos. Me ayudó a mejorar mis calificaciones.”</p>
-              </div>
-            </div>
-      
-          </div>
-      
-          <!-- Botones de navegación -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-      
-          <!-- Paginación -->
-          <div class="swiper-pagination"></div>
         </div>
-      </div>
-      
-   
-    
-        <!--
+    </header>
+
+    <section class="Introduccion" >
+        <div class="Introduccion-content">
+            <div class="Introduccion-texto">
+                <h1>Bienvenido al Instituto Resiliencia</h1>
+                <p>En nuestro instituto, transformamos el aprendizaje en una experiencia única y enriquecedora. Únete a nosotros y descubre cómo podemos ayudarte a alcanzar tus metas académicas.</p>
+                <div class="botones">
+                    <a href="#" class="btn btn-negro">Inscribete</a>
+                    <a href="#MisionVision" class="btn btn-blanco">Leer más</a>
+                </div>
+            </div>
+            <div class="Introduccion-imagen">
+                <img src="Recursos/chicaClases.png" alt="Imagen representativa de una estudiante">
+            </div>
+        </div>
+    </section>
+
+    <section class="MisionVision" id="MisionVision">
+
+        <h2 class="Mision-Vision">Nuestra misión y visión en Instituto Resiliencia</h2>
         
-        <section>
-            <h2>Nuestros Servicios de Formación Académica</h2>
-            <div class="services">
-            <div class="service">
-                <h3>Apoyo Académico Personalizado</h3>
-                <p>Contamos con tutores dedicados a guiar a los alumnos.</p>
+        <div class="Paneles">
+            <div class="Panel">
+                <h3>MISIÓN</h3>
+                <div class="info">
+                    <p>Mision texto texto texto texto</p>
+                </div>
             </div>
-            <div class="service">
-                <h3>Cursos para Diferentes Universidades</h3>
-                <p>Programas adaptados a las necesidades de cada estudiante.</p>
+                                
+            <div class="Panel">
+                <h3>VISIÓN</h3>
+                <div class="info">
+                    <p>Vision texto texto texto texto</p>
+                </div>
             </div>
-            <div class="service">
-                <h3>Metodología Innovadora</h3>
-                <p>Últimos recursos y técnicas para facilitar el aprendizaje.</p>
-            </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section>
-            <h2>¿Por qué elegir nuestros cursos?</h2>
-            <p>Están diseñados para ofrecer una educación de calidad para estudiantes de todo nivel académico.</p>
-            <ul>
-            <li>Metodología innovadora y adaptativa</li>
-            <li>Apoyo académico constante</li>
-            <li>Acceso a recursos actualizados</li>
-            </ul>
-            <br>
-            <button class="btn btn-primary">Inscribirse</button>
-            <button class="btn btn-outline">Ver más</button>
-        </section>
+    <div class="testimonial">
+        <div class="testimonials-container">
+            <h2 class="Testimonials-title-intro">Testimonios de nuestros Ex-Alumnos</h2>
+            <div class="swiper testimonials-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Testimonio 1 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-content">
+                            <img src="Recursos\Logo-BUAP.png" alt="Sarah Price" class="testimonial-avatar">
+                            <h3 class="testimonial-name">Sarah Price</h3>
+                            <p class="testimonial-title">Benemerita Universidad Autonoma de Puebla</p>
+                            <p class="testimonial-quote">El curso cumplió al 100% con las expectativas.</p>
+                        </div>
+                    </div>
 
-        <section>
-            <h2>FAQs</h2>
-            <p>Respondemos a las preguntas más comunes.</p>
-            <div class="accordion">
-            <div class="accordion-item">
-                <details>
-                <summary>¿Cuánto duran los cursos?</summary>
-                <p>Entre 6 y 12 meses, dependiendo del programa.</p>
-                </details>
-            </div>
-            <div class="accordion-item">
-                <details>
-                <summary>¿Cuáles son los precios?</summary>
-                <p>Precios accesibles con opciones de becas.</p>
-                </details>
-            </div>
-            <div class="accordion-item">
-                <details>
-                <summary>¿Qué universidades ofrecen?</summary>
-                <p>Convenios con más de 10 universidades nacionales e internacionales.</p>
-                </details>
-            </div>
-            <div class="accordion-item">
-                <details>
-                <summary>¿Cómo me inscribo?</summary>
-                <p>Rellena el formulario y nos pondremos en contacto contigo.</p>
-                </details>
-            </div>
-            <div class="accordion-item">
-                <details>
-                <summary>¿Qué requisitos necesito?</summary>
-                <p>Ser mayor de 16 años y tener acceso a internet.</p>
-                </details>
-            </div>
-            </div>
-        </section>
+                    <!-- Testimonio 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-content">
+                            <img src="Recursos\Logo-BUAP.png" alt="Sarah Price" class="testimonial-avatar">
+                            <h3 class="testimonial-name">Sarah Price</h3>
+                            <p class="testimonial-title">Benemerita Universidad Autonoma de Puebla</p>
+                            <p class="testimonial-quote">El curso cumplió al 100% con las expectativas.</p>
+                        </div>
+                    </div>
 
-        <section class="join">
-            <h2>Únete a nuestra comunidad educativa</h2>
-            <p>Regístrate ahora para obtener más información.</p>
-            <button class="btn btn-primary">Inscribirse</button>
-            <button class="btn btn-outline">Contáctanos</button>
-        </section>
+                    <!-- Testimonio 3 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-content">
+                            <img src="Recursos\Logo-BUAP.png" alt="Sarah Price" class="testimonial-avatar">
+                            <h3 class="testimonial-name">Sarah Price</h3>
+                            <p class="testimonial-title">Benemerita Universidad Autonoma de Puebla</p>
+                            <p class="testimonial-quote">El curso cumplió al 100% con las expectativas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 4 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-content">
+                            <img src="Recursos\Logo-BUAP.png" alt="Sarah Price" class="testimonial-avatar">
+                            <h3 class="testimonial-name">Sarah Price</h3>
+                            <p class="testimonial-title">Benemerita Universidad Autonoma de Puebla</p>
+                            <p class="testimonial-quote">El curso cumplió al 100% con las expectativas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 5 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-content">
+                            <img src="Recursos\Logo-BUAP.png" alt="Sarah Price" class="testimonial-avatar">
+                            <h3 class="testimonial-name">Sarah Price</h3>
+                            <p class="testimonial-title">Benemerita Universidad Autonoma de Puebla</p>
+                            <p class="testimonial-quote">El curso cumplió al 100% con las expectativas.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Botones y paginación -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div> 
+        </div>
     </div>
+<!--
+    <section>
+        <h2>Nuestros Servicios de Formación Académica</h2>
+        <div class="services">
+        <div class="service">
+            <h3>Apoyo Académico Personalizado</h3>
+            <p>Contamos con tutores dedicados a guiar a los alumnos.</p>
+        </div>
+        <div class="service">
+            <h3>Cursos para Diferentes Universidades</h3>
+            <p>Programas adaptados a las necesidades de cada estudiante.</p>
+        </div>
+        <div class="service">
+            <h3>Metodología Innovadora</h3>
+            <p>Últimos recursos y técnicas para facilitar el aprendizaje.</p>
+        </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>¿Por qué elegir nuestros cursos?</h2>
+        <p>Están diseñados para ofrecer una educación de calidad para estudiantes de todo nivel académico.</p>
+        <ul>
+        <li>Metodología innovadora y adaptativa</li>
+        <li>Apoyo académico constante</li>
+        <li>Acceso a recursos actualizados</li>
+        </ul>
+        <br>
+        <button class="btn btn-primary">Inscribirse</button>
+        <button class="btn btn-outline">Ver más</button>
+    </section>
+
+    <section>
+        <h2>FAQs</h2>
+        <p>Respondemos a las preguntas más comunes.</p>
+        <div class="accordion">
+        <div class="accordion-item">
+            <details>
+            <summary>¿Cuánto duran los cursos?</summary>
+            <p>Entre 6 y 12 meses, dependiendo del programa.</p>
+            </details>
+        </div>
+        <div class="accordion-item">
+            <details>
+            <summary>¿Cuáles son los precios?</summary>
+            <p>Precios accesibles con opciones de becas.</p>
+            </details>
+        </div>
+        <div class="accordion-item">
+            <details>
+            <summary>¿Qué universidades ofrecen?</summary>
+            <p>Convenios con más de 10 universidades nacionales e internacionales.</p>
+            </details>
+        </div>
+        <div class="accordion-item">
+            <details>
+            <summary>¿Cómo me inscribo?</summary>
+            <p>Rellena el formulario y nos pondremos en contacto contigo.</p>
+            </details>
+        </div>
+        <div class="accordion-item">
+            <details>
+            <summary>¿Qué requisitos necesito?</summary>
+            <p>Ser mayor de 16 años y tener acceso a internet.</p>
+            </details>
+        </div>
+        </div>
+    </section>
+
+    <section class="join">
+        <h2>Únete a nuestra comunidad educativa</h2>
+        <p>Regístrate ahora para obtener más información.</p>
+        <button class="btn btn-primary">Inscribirse</button>
+        <button class="btn btn-outline">Contáctanos</button>
+    </section>
 -->
     <footer>
         <ul class="redes-sociales">
@@ -261,36 +246,6 @@
         </div>
 
     </footer>
-
-    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        new Swiper('.swiper', {
-          slidesPerView: 'auto',
-          centeredSlides: true,
-          loop: true,
-          spaceBetween: 40,
-          speed: 600,
-          effect: 'coverflow',
-          coverflowEffect: {
-            rotate: 0,
-            stretch: -50,
-            depth: 150,
-            modifier: 1,
-            slideShadows: false
-          },
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-          }
-        });
-      });
-    </script>
 
 </body>
 </html>

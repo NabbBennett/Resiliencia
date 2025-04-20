@@ -1,31 +1,42 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let lastScroll = 0;
-    const navbar = document.querySelector(".navbar");
+  let lastScroll = 0;
+  const navbar = document.querySelector(".navbar");
 
-    window.addEventListener("scroll", function () {
-      const currentScroll = window.scrollY;
+  window.addEventListener("scroll", function () {
+    const currentScroll = window.scrollY;
 
-      if (currentScroll > lastScroll && currentScroll > 50) {
-        // Scrolling hacia abajo
-        navbar.classList.add("ocultar");
-      } else {
-        // Scrolling hacia arriba
-        navbar.classList.remove("ocultar");
-      }
+    if (currentScroll > lastScroll && currentScroll > 50) {
+      navbar.classList.add("ocult");
+    } else {
+      navbar.classList.remove("ocult");
+    }
 
-      lastScroll = currentScroll;
-    });
-});
-
-document.querySelector('.btn-blanco').addEventListener('click', function(e) {
-  e.preventDefault();
-  const target = document.querySelector('#MisionVision');
-  const headerOffset = 10; 
-  const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
-  const offsetPosition = targetPosition - headerOffset;
-
-  window.scrollTo({
-    top: offsetPosition,
-    behavior: 'smooth'
+    lastScroll = currentScroll;
   });
-});
+});   
+  
+document.addEventListener('DOMContentLoaded', function () {
+  new Swiper('.testimonials-swiper', {
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  loop: true,
+  spaceBetween: 40,
+  speed: 600,
+  effect: 'coverflow',
+  coverflowEffect: {
+      rotate: 0,
+      stretch: -50, 
+      depth: 150, 
+      modifier: 1,
+      slideShadows: false
+  },
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+  },
+      navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+  });
+});    
