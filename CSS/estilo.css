@@ -1,3 +1,8 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -51,7 +56,7 @@
     padding-right: 80px;
   }
 
-  .Rercursos-Nav {
+  .Recursos-Nav {
     display: flex;
     padding-left: 100px;
     gap: 2rem;
@@ -59,14 +64,14 @@
     font-size: 1rem;
   }
 
-  .Rercursos-Nav a {
+  .Recursos-Nav a {
     padding: 0.5rem 0.75rem;
     color: #333;
     text-decoration: none;
     gap: 1rem;
   }
 
-  .Rercursos-Nav a:hover {
+  .Recursos-Nav a:hover {
     color: #262d69;
   }
 
@@ -156,8 +161,11 @@
   }
   
   .btn {
+    border-radius: 999px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
     padding: 12px 24px;
-    font-size: 0.95rem;
+    font-size: 1rem;
+    font-weight: bold;
     text-decoration: none;
     border: 1px solid black;
     transition: 0.3s;
@@ -167,10 +175,20 @@
     background-color: black;
     color: white;
   }
+
+  .btn-negro:hover{
+    background-color: white;
+    color: black;
+  }
   
   .btn-blanco {
     background-color: white;
     color: black;
+  }
+
+  .btn-blanco:hover{
+    background-color: black;
+    color: white;
   }
   
   .hero-imagen {
@@ -184,87 +202,199 @@
     height: auto;
   }
 
-  
-  .btn {
-    padding: 0.6rem 1.2rem;
-    border: none;
-    cursor: pointer;
-    margin-right: 1rem;
-    font-weight: bold;
-  }
-  .btn-primary {
-    background-color: black;
-    color: white;
-  }
-  .btn-outline {
-    background: white;
-    border: 1px solid black;
-    color: black;
-  }
-  section {
-    padding: 2rem;
-  }
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-between;
-  }
-  .card {
-    flex: 1;
-    min-width: 250px;
-    background-color: #f2f2f2;
-    padding: 1rem;
+
+  .Mision-Vision {
+    max-width: 500px;
     border-radius: 8px;
-  }
-  .card img {
-    background: #ccc;
-    width: 100%;
-    height: 150px;
-    margin-bottom: 1rem;
-  }
-  .testimonial {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem;
-    background: #f9f9f9;
-  }
-  .testimonial img {
-    width: 300px;
-    height: 300px;
-    background: #ccc;
-  }
-  .services {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-between;
-  }
-  .service {
-    flex: 1;
-    min-width: 250px;
-    background: #f2f2f2;
     padding: 1rem;
-    border-radius: 8px;
-  }
-  .accordion {
-    margin-top: 1rem;
-  }
-  .accordion-item {
-    margin-bottom: 0.5rem;
-    border-bottom: 1px solid #ccc;
-  }
-  .accordion-item summary {
-    cursor: pointer;
-    font-weight: bold;
-    padding: 0.5rem 0;
-  }
-  .join {
+    font-size: 2rem;
+    color:black;
+    font-family: "Lato", sans-serif;
     text-align: center;
-    background: #f0f0f0;
-    padding: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
+
+  .MisionVision {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .Paneles {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    
+  }
+
+  .Panel {
+    flex: 1;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+  }
+
+  .Panel h3 {
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e9ecef;
+  }
+
+  .info p {
+    font-family: "Noto Serif", serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #000000;
+    padding-top: 2px;
+  }
+
+/*------------------*/
+
+.Testimonio-titulo {
+  max-width: 400px;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 2rem;
+  color:black;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.testimonios,
+.swiper {
+  position: relative;
+  padding-top: 50px;
+  padding-left: 150px;
+  padding-right: 180px;
+}
+
+.swiper {
+  padding: 30px 0;
+}
+.swiper-slide {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 40px 30px;
+  width: 380px;
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: all 0.4s ease;
+}
+.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 10;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.testimonio {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonio-imagen {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.testimonio-nombre {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.UniversidadIngresada {
+  font-family: "Lato", sans-serif;
+  color: #3498db;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.testimonio-texto {
+  font-family: "Noto Serif", serif;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  font-style: normal;
+}
+
+/* 4) Botones de navegación: posición + separación */
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  color: #3498db;
+  box-shadow: 0 5px 15px rgba(0,0,0,0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.swiper-button-prev { left: -50px; }
+.swiper-button-next { right: -50px; }
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #083774;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.swiper-pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #bdc3c7;
+  opacity: 1;
+  margin: 0 4px;
+}
+.swiper-pagination-bullet-active {
+  background: #3498db;
+}
+
+
+/*------------------*/
 
   footer {
     display: flex;
@@ -357,41 +487,3 @@
     text-align: center;
     font-size: small;
   }
-  
-
-  /*
-  @media (max-width: 768px) {
-    .hero {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .testimonial {
-      flex-direction: column;
-    }
-  }
-  
-  @media screen and (max-width:800px) {
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-      background-color: #f8f8f8;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      transition: top 0.3s ease-in-out;
-    }
-  
-    header, footer {
-      background-color: #f8f8f8;
-      padding: 1rem 2rem;
-    }
-  
-    header nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-  }
-    */

@@ -8,15 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/estilo.css" />
-    <script src="JS/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="JS/script.js"></script>
 </head>
-
 
     <body>
         <header class="navbar">
             <div class="nav-contenedor">
                 <img src="Recursos/LogoInicio.png" alt="Logo del Instituto Resiliencia" class="Logo">
-                    <nav class="Rercursos-Nav">
+                    <nav class="Recursos-Nav">
                         <a href="#">Inicio</a>
                         <a href="#">Universidades</a>
                         <a href="#">Cursos</a>
@@ -28,14 +28,14 @@
             </div>
         </header>
 
-        <section class="Introduccion">
+        <section class="Introduccion" >
             <div class="Introduccion-content">
                 <div class="Introduccion-texto">
                     <h1>Bienvenido al Instituto Resiliencia</h1>
                     <p>En nuestro instituto, transformamos el aprendizaje en una experiencia única y enriquecedora. Únete a nosotros y descubre cómo podemos ayudarte a alcanzar tus metas académicas.</p>
                     <div class="botones">
-                        <a href="#" class="btn btn-negro">Explorar</a>
-                        <a href="#" class="btn btn-blanco">Inscribirse</a>
+                        <a href="#" class="btn btn-negro">Inscribete</a>
+                        <a href="#MisionVision" class="btn btn-blanco">Leer más</a>
                     </div>
                 </div>
                 <div class="Introduccion-imagen">
@@ -44,20 +44,27 @@
             </div>
         </section>
 
-        <section>
-            <h2>Nuestra misión y visión en Instittuo Resiliencia</h2>
-                <div class="cards">
-                    <div class="card">
-                        <h2>MISIÓN</h2>
-                        <p>Mision texto texto texto texto</p>
-                    </div>
-                    <div class="card">
-                        <h2>VISIÓN</h2>
+        <section class="MisionVision" id="MisionVision">
+
+            <h2 class="Mision-Vision">Nuestra misión y visión en Instituto Resiliencia</h2>
+            
+            <div class="Paneles">
+                <div class="Panel">
+                    <h3>MISIÓN</h3>
+                    <div class="info">
                         <p>Mision texto texto texto texto</p>
                     </div>
                 </div>
+                                    
+                <div class="Panel">
+                    <h3>VISIÓN</h3>
+                    <div class="info">
+                        <p>Vision texto texto texto texto</p>
+                    </div>
+                </div>
+            </div>
         </section>
-
+<!--
         <section>
             <h2>Tu futuro comienza</h2>
             <p>En nuestro instituto, formamos a los líderes del mañana a través de la educación de calidad.</p>
@@ -83,14 +90,58 @@
             </div>
         </section>
 
-        <section class="testimonial">
-            <img alt="Testimonio">
-            <blockquote>
-            <p>“Las clases en este instituto han transformado mi forma de aprender.”</p>
-            <footer>— Jane Pérez, Estudiante</footer>
-            </blockquote>
-        </section>
+    -->
 
+    <div class="testimonios">
+        <h2 class="Testimonio-titulo">Opiniones de nuestros ex-alumnos</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            
+            <!-- Testimonio 1 -->
+            <div class="swiper-slide">
+              <div class="testimonio">
+                <img src="Recursos\Logo-BUAP.png" alt="Usuario 1" class="testimonio-imagen" />
+                <h3 class="testimonio-nombre">Jazmín Ortega</h3>
+                <p class="UniversidadIngresada">Universidad Autónoma de Querétaro</p>
+                <p class="testimonio-texto">“Es una aplicación que realmente me ayudó a reforzar mis conocimientos y habilidades como estudiante.”</p>
+              </div>
+            </div>
+      
+            <!-- Testimonio 2 -->
+            <div class="swiper-slide">
+              <div class="testimonio">
+                <img src="Recursos\Logo-BUAP.png" alt="Usuario 2" class="testimonio-imagen" />
+                <h3 class="testimonio-nombre">Carlos Rodríguez</h3>
+                <p class="UniversidadIngresada">Universidad de Guadalajara</p>
+                <p class="testimonio-texto">“La interfaz es muy intuitiva y los contenidos están bien explicados. ¡La recomiendo!”</p>
+              </div>
+            </div>
+      
+            <!-- Testimonio 3 -->
+            <div class="swiper-slide">
+              <div class="testimonio">
+                <img src="Recursos\Logo-BUAP.png" alt="Usuario 3" class="testimonio-imagen" />
+                <h3 class="testimonio-nombre">Fernanda López</h3>
+                <p class="UniversidadIngresada">Instituto Politécnico Nacional</p>
+                <p class="testimonio-texto">“Me encantó cómo combina teoría con ejercicios prácticos. Me ayudó a mejorar mis calificaciones.”</p>
+              </div>
+            </div>
+      
+          </div>
+      
+          <!-- Botones de navegación -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+      
+          <!-- Paginación -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      
+   
+    
+        <!--
+        
         <section>
             <h2>Nuestros Servicios de Formación Académica</h2>
             <div class="services">
@@ -166,7 +217,7 @@
             <button class="btn btn-outline">Contáctanos</button>
         </section>
     </div>
-
+-->
     <footer>
         <ul class="redes-sociales">
             <a href="https://www.facebook.com/profile.php?id=100065627762968&mibextid=9R9pXO" target="_blank">
@@ -210,6 +261,36 @@
         </div>
 
     </footer>
+
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('.swiper', {
+          slidesPerView: 'auto',
+          centeredSlides: true,
+          loop: true,
+          spaceBetween: 40,
+          speed: 600,
+          effect: 'coverflow',
+          coverflowEffect: {
+            rotate: 0,
+            stretch: -50,
+            depth: 150,
+            modifier: 1,
+            slideShadows: false
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          }
+        });
+      });
+    </script>
+
 </body>
 </html>

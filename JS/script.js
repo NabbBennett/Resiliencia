@@ -16,3 +16,16 @@ document.addEventListener("DOMContentLoaded", function () {
       lastScroll = currentScroll;
     });
 });
+
+document.querySelector('.btn-blanco').addEventListener('click', function(e) {
+  e.preventDefault();
+  const target = document.querySelector('#MisionVision');
+  const headerOffset = 10; 
+  const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+  const offsetPosition = targetPosition - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: 'smooth'
+  });
+});
