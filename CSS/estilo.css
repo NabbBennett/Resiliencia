@@ -1,4 +1,4 @@
-  .navbar {
+.navbar {
     background-color: rgb(255, 255, 255);
     padding: 1rem 2rem;
     border-radius: 2rem; 
@@ -110,12 +110,15 @@
   }
 
   .Introduction-text h1 {
+    font-family: 'Lato';
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
   }
 
   .Introduction-text p {
+    font-family: 'Noto Serif';
+    font-weight: lighter;
     font-size: 1rem;
     margin-bottom: 30px;
     line-height: 1.6;
@@ -169,6 +172,7 @@
   }
 
   /*----------*/
+
   .MisionVision {
     max-width: 1000px;
     margin: 50px;
@@ -224,6 +228,63 @@
     font-weight: lighter;
     color: #000000;
     padding-top: 2px;
+  }
+
+/*-----------------*/
+
+  .offert{
+    margin: 0;
+    padding: 2rem;
+    background-color: #ffffff;
+  }
+
+  .offert h1 {
+    font-family: 'Lato';
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 50px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    background-color: #000000; 
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(53,108,255,0.2);
+  }
+
+  .card h3 {
+    margin-top: 0;
+    font-family: 'Lato';
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .card p{
+    font-family: "Noto Serif", serif;
+    font-size: medium;
+  }
+
+  .card:hover h3,
+    .card:hover p {
+      color: white;
   }
 
 /*------------------*/
@@ -339,7 +400,6 @@
   .swiper-pagination {
     margin-top: 20px;
     text-align: center;
-
   }
 
   .swiper-pagination-bullet {
@@ -351,6 +411,131 @@
 
   .swiper-pagination-bullet-active {
     background: #3498db;
+  }
+
+/*-------*/
+
+  /* FAQ Section */
+  .FAQ {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .faq-title {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #000000;
+  }
+
+  .accordion {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .accordion-item {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .accordion-header {
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #000000;
+    transition: all 0.3s ease;
+  }
+
+  .accordion-header:hover {
+    background-color: #f0f0f0;
+  }
+
+  .accordion-header.active {
+    background-color: #000000;
+    color: white;
+  }
+
+  .accordion-header .icon {
+    transition: transform 0.3s ease;
+    font-size: 1.2rem;
+  }
+
+  .accordion-header.active .icon {
+    transform: rotate(180deg);
+    color: white;
+  }
+
+  .accordion-content {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    font-family: 'Noto Serif', serif;
+    font-weight: lighter;
+    line-height: 1.6;
+  }
+
+  .accordion-content.active {
+    max-height: 300px;
+    padding: 1rem 1.5rem 1.5rem;
+  }
+  
+  
+/*-------*/
+
+  .Join-Contact{
+    margin: 0;
+    padding: 1rem;
+    background-color: #ffffff;
+  }
+
+  .Join-Contact h1 {
+    font-family: 'Lato';
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 10px;
+  }
+
+  .two-options{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 1.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .option {
+    background-color: white;
+    border-radius: 12px;
+    padding: 0.5rem; /* Reduje el padding de 1rem a 0.5rem */
+    box-shadow: 0 10px 5px rgba(0,0,0,0.5);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    font-size: 0.9rem; 
+    width: 200px; 
+    height: auto; 
+    min-width: unset; 
+  }
+
+  .option:hover {
+    background-color: #000000; 
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(53,108,255,0.2);
   }
 
 /*-------*/
@@ -431,12 +616,12 @@
   z-index: 2;
   }
 
-  .social-media li:hover .icono-img {
+  .social-media li:hover .icon-img-social {
   transform: translate(-50%, -50%) scale(0);
   opacity: 0;
   }
 
-  .social-media li:hover .titulo {
+  .social-media li:hover .sm-tittle {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   }
