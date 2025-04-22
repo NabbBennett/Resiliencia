@@ -83,3 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
       content.style.maxHeight = '0';
   });
 });
+
+document.getElementById("Join-b").addEventListener("click", function() {
+  window.location.href = "Login-Register.html";
+});

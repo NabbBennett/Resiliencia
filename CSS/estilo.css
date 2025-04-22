@@ -521,11 +521,11 @@
   .option {
     background-color: white;
     border-radius: 12px;
-    padding: 0.5rem; /* Reduje el padding de 1rem a 0.5rem */
+    padding: 0.2rem;
     box-shadow: 0 10px 5px rgba(0,0,0,0.5);
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
-    font-size: 0.9rem; 
+    font-size: 1rem; 
     width: 200px; 
     height: auto; 
     min-width: unset; 
